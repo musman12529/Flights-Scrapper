@@ -72,6 +72,7 @@ def email_sender(price_list, company_name_list):
 
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
+    #Enter Your Own Email and Password
     server.login('Enter Yout Own Email', 'Enter Your Password')
 
     server.sendmail('Enter Yout Own Email', 'Enter Yout Own Email', message)
